@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 30px;
+  border: 2px solid rgb(131, 0, 0);
+  box-shadow: 2px 2px 5px #000000;
+  overflow: hidden;
+  min-height: 60vh;
+  min-width: 60vw;
+}
+
+.col1, .col2{
+
+  flex-basis: 50%;
+
+}
+
+.input {
+  border-radius: 10px;
+  outline: 2px solid rgb(0, 87, 0);
+  border: 0;
+  background-color: transparent;
+  outline-offset: 0.3em;
+  padding: 1em 1.5rem;
+  transition: 0.25s;
+  color: white;
+  background-color: #282c34d2;
+  margin-bottom: 1em;
+  width: 15em;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: transparent;
+  background-color: #282c34;
+}
+
+.input ::placeholder {
+
+  color: white;
+  opacity: 1;
+
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-top: 2em;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: red;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: white;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: whitesmoke;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: rgb(0, 87, 0);
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+  transform: rotate(90deg);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
